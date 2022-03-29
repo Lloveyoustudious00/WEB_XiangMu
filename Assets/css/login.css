@@ -7,3 +7,45 @@ html,body{
     background: url("/Web_XiangMu/Assets/images/灯光.jpg") no-repeat center;
     background-size: cover;
 }
+div[id=DengLuBanKuai]{
+    width: 360px;
+    height: 330px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+div[id=HoTaiGuanLiXiTo]{
+    width: 100%;
+    height: 80px;
+    font-weight: 1000;
+    font-size: 30px;
+    font-family: 楷体;
+    text-align: center;
+    line-height: 80px;
+}
+a[class=link-DengLu]{
+    display: none;
+}
+.layui-form{
+    padding: 0px 40px;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.layui-form-item{
+    position: relative;
+}
+.layui-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#padding-left{
+    padding-left: 30px;
+}
+.ZhuChe-box{
+    display: none;
+}
