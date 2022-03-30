@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="/Web_XiangMu/Assets/lib/layui/css/layui.css">
+    <script src="/Web_XiangMu/Assets/lib/layui/layui.js"></script>
+    <link rel="stylesheet" href="/Web_XiangMu/Assets/css/index.css">
+    <script src="/Web_XiangMu/Assets/lib/jquery-3.6.0.min.js"></script>
+    <script src="/Web_XiangMu/Assets/js/baseAPI.js"></script>
+    <script src="/Web_XiangMu/Assets/js/index.js"></script>
 </head>
 <body>
-    
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo layui-hide-xs layui-bg-black">大事件</div>
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+                    <a href="javascript:;" class="userinf">
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                            class="layui-nav-img">
+                        <span class="text-ataver">A</span>
+                        个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">更换头像</a></dd>
+                        <dd><a href="">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-item-ster" lay-header-event="menuRight" lay-unselect>
+                    <i class="layui-icon layui-icon-logout layui-icon_ster"></i>
+                    <a href="javascript:;" id="TueiChu">退出</a>
+                </li>
+            </ul>
+        </div>
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-shrink="all">
+                    <div class="userinf">
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                            class="layui-nav-img">
+                        <span class="text-ataver">A</span>
+                        <span class="text-Ster">欢迎 **</span>
+                    </div>
+                    <li class="layui-nav-item layui-nav-item_ster layui-this">
+                        <i class="layui-icon layui-icon-home layui-icon-ster"></i>
+                        <a href="/Web_XiangMu/Home/ShoYe.html" target="LianJie" class="padding-left">首页</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-item_ster">
+                        <i class="layui-icon layui-icon-file-b layui-icon-ster"></i>
+                        <a href="javascript:;" class="padding-left">文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <i class="layui-icon layui-icon-transfer layui-icon-html"></i>
+                                <a href="javascript:;" class="padding_left">文章类别</a>
+                            </dd>
+                            <dd>
+                                <i class="layui-icon layui-icon-transfer layui-icon-html"></i>
+                                <a href="javascript:;" class="padding_left">文章列表</a>
+                            </dd>
+                            <dd>
+                                <i class="layui-icon layui-icon-transfer layui-icon-html"></i>
+                                <a href="javascript:;" class="padding_left">发布文章</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-item_ster">
+                        <i class="layui-icon layui-icon-username layui-icon-ster"></i>
+                        <a href="javascript:;" class="padding-left">个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <i class="layui-icon layui-icon-transfer layui-icon-html"></i>
+                                <a href="javascript:;" class="padding_left">基本资料</a>
+                            </dd>
+                            <dd>
+                                <i class="layui-icon layui-icon-transfer layui-icon-html"></i>
+                                <a href="javascript:;" class="padding_left">更换头像</a>
+                            </dd>
+                            <dd>
+                                <i class="layui-icon layui-icon-transfer layui-icon-html"></i>
+                                <a href="javascript:;" class="padding_left">重置密码</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <iframe name="LianJie" src="/Web_XiangMu/Home/ShoYe.html" frameborder="0"></iframe>
+        </div>
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            大事件项目
+        </div>
+    </div>
 </body>
 </html>

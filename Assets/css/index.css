@@ -1,0 +1,59 @@
+.layui-footer{
+    text-align: center;
+    font-size: 16px;
+}
+.layui-nav-item-ster{
+    position: relative;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+.layui-icon_ster{
+    position: absolute;
+}
+.layui-icon-ster{
+    position: absolute;
+    top: 5.5px;
+    left: 10px;
+    z-index: 999;
+}
+.layui-icon-html{
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    z-index: 999;
+}
+.layui-nav-item_ster{
+    position: relative;
+}
+.padding-left{
+    padding-left: 35px!important;
+}
+.padding_left{
+    padding-left: 45px!important;
+}
+.userinf{
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    user-select: none;
+}
+.layui-side-scroll .userinf{
+    border-bottom: 1.5px #ccc solid;
+}
+.text-ataver{
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #ccc;
+    margin-right: 10px;
+}
+.layui-nav-img{
+    width: 40px;
+    height: 40px;
+}
+.text-Ster{
+    font-size: 12px;
+}
